@@ -1,0 +1,29 @@
+#filters {
+    margin-top: 10px;
+  }
+  
+table, .table {
+    font-size: 13px;
+} 
+
+.thead-long {
+    width: 120px;
+}
+
+#result {
+  font-size: 0.9375rem;
+}
+
+.search {
+  color: #43ac6a;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.filter {
+  background-color: #eee;
+}
+
+.navbar-brand {
+  margin-left: 0.725rem;
+}

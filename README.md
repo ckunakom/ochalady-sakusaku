@@ -1,2 +1,1 @@
-# ochalady-sakusaku
-Personal use of singing data
+PERSONAL USE ONLY!

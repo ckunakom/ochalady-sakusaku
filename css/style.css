@@ -12,6 +12,8 @@ table, .table {
 
 #result {
   font-size: 0.9375rem;
+  font-weight: 500;
+  margin-bottom: 15px;
 }
 
 .search {
@@ -26,4 +28,13 @@ table, .table {
 
 .navbar-brand {
   margin-left: 0.725rem;
+}
+
+#ptext {
+  margin-bottom: 0.275rem;
+}
+
+.update {
+  font-size: 12px;
+  text-align: right;
 }

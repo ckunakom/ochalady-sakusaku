@@ -3,7 +3,7 @@
 var tbody = d3.select("tbody");
 
 // Load data from clean_top_tracks.json
-d3.csv("./data/saku_ochalady.csv").then(function(trackData) {
+d3.csv("./data/ochalady-sakusaku.csv").then(function(trackData) {
 
     // console.log(trackData);
     
@@ -16,7 +16,7 @@ d3.csv("./data/saku_ochalady.csv").then(function(trackData) {
         // row.append("td").text(data.title);
         row.append("td").html(`<a href="${data.URL}" target="_blank">${data.Title}</a>`);
         row.append("td").text(data.Artist);
-        row.append("td").text(data.Inviter);
+        row.append("td").text(data.Invite_Spawner);
         row.append("td").text(data.Date_Created);
         // row.append("td").html(`<a href="${data.URL}">${data.URL}</a>`);
 
@@ -26,7 +26,7 @@ d3.csv("./data/saku_ochalady.csv").then(function(trackData) {
     var length = trackData.length;
 
     window.addEventListener('load', (event) => {
-        var result = `There are ${length} result(s).`;
+        var result = `There are ${length} song(s).`;
         document.getElementById("result").innerHTML = result;
     });
     
@@ -71,7 +71,7 @@ function search() {
             pass = compare(tdArtist, inputArtist);
         }
 
-        if (pass && inputArtist) {
+        if (pass && inputInviter) {
             pass = compare(tdInviter, inputInviter);
         }
         
@@ -98,34 +98,6 @@ function compare(string1, string2) {
 
 // Update result numbers
 function updateResult(count) {
-    var result = `There are ${count} result(s).`;
+    var result = `There are ${count} song(s).`;
     document.getElementById("result").innerHTML = result;
 } 
-
-// Create search list -- Thank you w3schools.com <3 //
-// // Search with title
-// function searchTitle() {
-//     var input, filter, table, tr, td, i, txtValue, count;
-//     input = document.getElementById("song-title");
-//     filter = input.value.toUpperCase();
-//     table = document.getElementById("song-table");
-//     tr = table.getElementsByTagName("tr");
-//     count = 0;
-
-//     for (i = 0; i < tr.length; i++) {
-//         td = tr[i].getElementsByTagName("td")[0];
-        
-//         if (td) {
-//             txtValue = td.textContent || td.innerText;
-//             if (txtValue.toUpperCase().indexOf(filter) > -1) {
-//                 tr[i].style.display = "";
-//                 count = count + 1;
-//                 console.log(count);               
-//             }
-//             else {
-//                 tr[i].style.display = "none";
-//             }
-//         }    
-        
-//     }
-// }

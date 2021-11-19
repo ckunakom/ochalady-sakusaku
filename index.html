@@ -12,15 +12,16 @@
 
 <body>
     <nav class="navbar navbar-dark bg-primary">
-      <a class="navbar-brand text-center" href="https://ckunakom.github.io/" target="_blank">
+      <a class="navbar-brand" href="https://ckunakom.github.io/" target="_blank">
         <img src="https://ckunakom.github.io/img/logo.png" width="45" height="45" alt="ck-logo"> 
       </a>
     </nav>
 
     <div class="container">
         <div class="row pt-3">
-            <h3 class="text-warning">一緒に歌った曲🎤</h3>
-            <!-- <p></p> -->
+            <h3 class="text-warning">Cynthiaとさくらの一緒に歌った曲🎤</h3>
+            <p id='ptext'>26歳の誕生日おめでとう🎂！　この作ったページ、何曲一緒に歌ったか調べたら簡単に探せるためのだ！私たちの思い出の宝箱のサイト✨！
+            <br>私からこのページのURLをもらわなかったら、誰も入らないはずです。さくらじゃないなら、失せなさい！🤣</p>
             <div class="col-md-2">
                 <div>
                   <div class="pt-3 text-info">🔍Search</div>
@@ -32,7 +33,7 @@
                               <input class="form-control form-control-sm mb-2" id="song-title" onkeyup="search()" type="text" placeholder="Type in a song title">
                               <label class="form-label search" for="artist">Artist</label>
                               <input class="form-control form-control-sm mb-2" id="artist" onkeyup="search()" type="text" placeholder="Type in an artist">
-                              <label class="form-label search" for="artist">Inviter</label>
+                              <label class="form-label search" for="inviter">Inviter</label>
                               <input class="form-control form-control-sm mb-2" id="inviter" onkeyup="search()" type="text" placeholder="Type in username">
                               <label class="form-label search" for="date-created">Date Created</label>
                               <input class="form-control form-control-sm mb-2" id="date-created" onkeyup="search()" type="text" placeholder="YYYY-MM-DD">
@@ -45,21 +46,19 @@
 
             <div class="col-md-10 pt-3">
                 <div>
-                  <h6 id="result"></h6>
+                  <h6 id="result" class='text-info'></h6>
                     <table class="table table-hover table-sm" id="song-table">
-                    <thead>
-                        <tr class="table-light">
-                        <th class="table-head">Title</th>
-                        <th class="table-head">Artist(s)</th>
-                        <th class="table-head">Inviter</th>
-                        <th class="table-head thead-long">Date Created</th>
-                        <!-- <th class="table-head">Duration (minutes)</th>
-                        <th class="table-head">Popularity (user's)</th> -->
-                        <!-- <th class="table-head">URL</th> -->
-                        </tr>
-                    </thead>
-                    <tbody></tbody>
+                      <thead>
+                          <tr class="table-light">
+                          <th class="table-head">Title</th>
+                          <th class="table-head">Artist(s)</th>
+                          <th class="table-head">Inviter</th>
+                          <th class="table-head">Date Created</th>
+                          </tr>
+                      </thead>
+                      <tbody></tbody>
                     </table>
+                    <p class='update'>Last update:November 19th, 2021.</p>
                 </div>
             </div>
         </div>

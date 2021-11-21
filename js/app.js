@@ -24,11 +24,8 @@ d3.csv("./data/ochalady-sakusaku.csv").then(function(trackData) {
 
     // Get the number of result
     var length = trackData.length;
-
-    window.addEventListener('load', (event) => {
-        var result = `There are ${length} song(s).`;
-        document.getElementById("result").innerHTML = result;
-    });
+    var result = `There are ${length} song(s).`;
+    document.getElementById("result").innerHTML = result;
     
 // Error handler: log error to console when loading data
 }).catch(function(error) {
